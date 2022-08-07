@@ -22,10 +22,18 @@ flutter:
 dependencies:
   audioplayers_android: ^1.0.1
   audioplayers_darwin: ^1.0.1
-  audioplayers_linux: ^1.0.0
+  audioplayers_linux:
+    git:
+      url: https://github.com/ProjectAnni/audioplayers
+      path: packages/audioplayers_linux
+      ref: prod
   audioplayers_platform_interface: ^1.0.0
   audioplayers_web: ^1.0.0
-  audioplayers_windows: ^1.0.0
+  audioplayers_windows:
+    git:
+      url: https://github.com/ProjectAnni/audioplayers
+      path: packages/audioplayers_windows
+      ref: prod
   flutter:
     sdk: flutter
   http: ^0.13.1
