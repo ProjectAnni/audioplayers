@@ -23,7 +23,7 @@ AudioPlayer::AudioPlayer(std::string playerId, FlMethodChannel *channel)
     gst_bus_add_watch(bus, (GstBusFunc) AudioPlayer::OnBusMessage, this);
 
     // Refresh continuously to emit reoccurring events
-    g_timeout_add(100, (GSourceFunc) AudioPlayer::OnRefresh, this);
+    g_timeout_add(500, (GSourceFunc) AudioPlayer::OnRefresh, this);
 }
 
 AudioPlayer::~AudioPlayer() {}
